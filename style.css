@@ -1,0 +1,263 @@
+/* ================= GENERAL STYLES ================= */
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+ 
+header {
+    background-color: #17365d;
+    color: WHITE;
+    text-align: center;
+    padding: 30px 20px;
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+ 
+header p {
+    margin: 8px 0 0;
+    font-size: 18px;
+}
+ 
+ 
+/* ================= NAVIGATION ================= */
+ 
+nav {
+    background-color: #0d253f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    display: block;
+}
+ 
+nav a:hover {
+    background-color: #28527a;
+}
+ 
+ 
+/* ================= HERO SECTION ================= */
+ 
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+ 
+.hero img {
+    width: 50%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+ 
+.hero div {
+    flex: 1;
+}
+ 
+.hero h2 {
+    color: #17365d;
+    font-size: 32px;
+}
+ 
+.button {
+    display: inline-block;
+    background-color: #17365d;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+ 
+.button:hover {
+    background-color: #28527a;
+}
+ 
+ 
+/* ================= CONTENT ================= */
+ 
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+ 
+.content h2 {
+    color: #17365d;
+}
+ 
+ 
+/* ================= PASTOR SECTION ================= */
+ 
+.pastor {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+ 
+.pastor h2 {
+    color: #17365d;
+    margin-bottom: 35px;
+}
+ 
+.pastor-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    text-align: left;
+}
+ 
+.pastor-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+.pastor-info {
+    max-width: 500px;
+}
+ 
+.pastor-info h3 {
+    font-size: 28px;
+    color: #17365d;
+    margin-bottom: 5px;
+}
+ 
+.pastor-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+ 
+.pastor-info a:hover {
+    text-decoration: underline;
+}
+ 
+ 
+/* ================= CONTACT SECTION ================= */
+ 
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+ 
+.contact-section h2 {
+    color: #17365d;
+    margin-bottom: 15px;
+}
+ 
+.contact-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+ 
+.contact-box {
+    width: 250px;
+    padding: 25px;
+    background-color: PINK;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-box h3 {
+    color: #17365d;
+}
+ 
+.contact-box a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.contact-box a:hover {
+    text-decoration: underline;
+}
+ 
+ 
+/* ================= FOOTER ================= */
+ 
+footer {
+    background-color: #0d253f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+ 
+footer p {
+    margin: 5px 0;
+}
+ 
+ 
+/* ================= MOBILE RESPONSIVE ================= */
+ 
+@media (max-width: 768px) {
+ 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .hero img {
+        width: 100%;
+    }
+ 
+    .hero h2 {
+        font-size: 26px;
+    }
+ 
+    .pastor-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .pastor-image img {
+        width: 220px;
+        height: 270px;
+    }
+ 
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .contact-box {
+        width: 80%;
+    }
+ 
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    header h1 {
+        font-size: 28px;
+    }
+}
